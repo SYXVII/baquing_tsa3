@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #83c5be, #ffddd2);
+}
+
+#calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #edf6f9;
+}
+
+#output {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #ccc;
+    grid-column: span 4; /* Span 4 columns for the output */
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    outline: none;
+    background-color: #eee;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+button:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+button:active {
+    border: 2px solid #999;
+}
+
+/* Custom styles for specific buttons */
+#zero {
+    grid-column: span 2; /* Span 2 columns for the zero button */
+}
+
+#decimal {
+    grid-row: 5; /* Place the decimal button in the 5th row */
+}
+
+#equal {
+    grid-row: span 2; /* Span 2 rows for the equal button */
+}
